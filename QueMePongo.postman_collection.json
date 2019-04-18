@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "b56b7837-8dd8-40e8-b0c3-31ac493e67c8",
+		"name": "QueMePongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Traer todos los Guardarropas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/guardarropa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"guardarropa"
+					]
+				},
+				"description": "Trae todos los guardarropas existentes."
+			},
+			"response": []
+		},
+		{
+			"name": "Traer un Guardarropas Especifico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/guardarropa/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"guardarropa",
+						"1"
+					]
+				},
+				"description": "Trae todos los guardarropas existentes."
+			},
+			"response": []
+		},
+		{
+			"name": "Nuevo Guardarropas",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"nombre\": \"Ropa de jardinero\", \"duenio\": \"Samwise Gamgee\"}"
+				},
+				"url": {
+					"raw": "localhost:8080/guardarropa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"guardarropa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Guardarropas",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"nombre\": \"Ropa de héroe\", \"duenio\": \"Samwise Gamgee\"}"
+				},
+				"url": {
+					"raw": "localhost:8080/guardarropa/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"guardarropa",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar guardarropas",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/guardarropa/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"guardarropa",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
