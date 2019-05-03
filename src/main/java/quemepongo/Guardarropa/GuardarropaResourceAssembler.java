@@ -1,10 +1,11 @@
-package quemepongo.Guardarropa;
-
-import static org.springframework.hateoas.mvc.ControllerLinkBuilder.*;
+/*package quemepongo.Guardarropa;
 
 import org.springframework.hateoas.Resource;
 import org.springframework.hateoas.ResourceAssembler;
 import org.springframework.stereotype.Component;
+
+import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
+import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Component
 class GuardarropaResourceAssembler implements ResourceAssembler<Guardarropa, Resource<Guardarropa>> {
@@ -17,3 +18,4 @@ class GuardarropaResourceAssembler implements ResourceAssembler<Guardarropa, Res
                 linkTo(methodOn(GuardarropaController.class).all()).withRel("employees"));
     }
 }
+*/

@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Pagina principal</title>
+</head>
+<body>
+<h2>Esta es la pagina principal, la que se inciia por default si no pedis un metodo especifico</h2>
+Probar estas URLs para ver la idea general
+<ul>
+
+    <li><a href="metodoInexistente">URL no existente</a>    Porque no existe un "@GetMapping("/metodoInexistente")" en algun Controller</li>
+    <li><a href="metodoPrueba">Ejemplo sin parametro</a>    Por ende se setea el parametro por default, que es "Carlos"</li>
+    <li><a href="metodoPrueba?nombre=ernesto">Segunda prueba (Ejemplo con parametro)</a>    Se setea el valor elegido por el usuario(en este caso hardcodeado en el link)</li>
+    <li><a href="parteFruta">Prueba de la vista mentirosa</a>    Al no agregar el parametro obligatorio ira a error</li>
+    <li><a href="parteFruta?valor=true">Prueba de la vista mentirosa</a>    Se elige un valor y el opcional ira por default</li>
+</ul>
+</body>
+</html>
